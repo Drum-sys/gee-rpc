@@ -1,6 +1,6 @@
 # gee-rpc
 
-## 消息体编解码
+## 消息编解码
 err = client.Call("Arith.Multiply", args, &reply)
 典型的rpc调用如上所示， 请求参数为：服务名，方法名， 参数args。 响应参数为reply， err
 将请求和响应中的参数和返回值抽象为 body， 剩余的信息放在 header 中
