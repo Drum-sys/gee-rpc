@@ -456,8 +456,7 @@ func (client *Client) send(call *Call) {
 	}
 }
 
-// Go invokes the function asynchronously.
-// It returns the Call structure representing the invocation.
+
 func (client *Client) Go(serviceMethod string, args, reply interface{}, done chan *Call) *Call {
 	if done == nil {
 		done = make(chan *Call, 10)
@@ -482,7 +481,7 @@ func (client *Client) Call(serviceMethod string, args, reply interface{}) error 
 }
 ```
 
-### 服务注册和发现
+## 服务注册和发现
 
 
 
